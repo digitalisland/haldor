@@ -1,0 +1,22 @@
+{
+  "name": "Haldor",
+  "short_name": "haldor",
+  "start_url": "/",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#FFF",
+  "theme_color": "#213e7a",
+  "description": "Halodr",
+  "dir": "ltr",
+  "lang": "sv-SE",
+  "orientation": "portrait-primary",
+  "icons": [{
+      "src": "/wp-content/uploads/2020/08/favicon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+  }, {
+      "src": "wp-content/uploads/2020/08/favicon-180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+  }]
+}

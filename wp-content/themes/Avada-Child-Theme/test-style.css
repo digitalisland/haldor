@@ -1,0 +1,601 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for Avada theme
+Author: ThemeFusion
+Author URI: https://theme-fusion.com
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+
+:root {
+	--haldor-heading-h1: var(--h1_typography-font-size);
+	--haldor-heading-h2: var(--h2_typography-font-size);
+	--haldor-heading-h3: var(--h3_typography-font-size);
+	--haldor-heading-smaller-screen: var(--h3_typography-font-size);
+	--haldor-brand-color-lightblue: #99cdf5;
+	--haldor-brand-color-petrol: #16b1a6;
+	--haldor-brand-color-grey: #dadada;
+	--haldor-brand-color-darkgrey: #96999d;
+	--haldor-brand-color-blue: var(--primary_color);
+	--haldor-brand-color-purple: #e5578e;
+  }
+  
+  html {
+	font-size: 16px;
+	/* Base size. */
+  }
+  @media screen and (min-width: 320px) {
+	html {
+	  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+	}
+  }
+  
+  @media screen and (min-width: 1000px) {
+	html {
+	  font-size: 22px;
+	}
+  }
+  
+  /* Mobile first. */
+  .responsive-text {
+	font-size: 1rem;
+  }
+  
+  /* Move the flag to the middle */
+  .lang-item img {
+	vertical-align: middle;
+  }
+  
+  .fusion-tb-header .fusion-sticky-container {
+	position: fixed !important;
+  }
+  
+  @media only screen and (max-width: 480px) {
+	.fusion-tb-header .fusion-sticky-container {
+	  padding-top: 4px;
+	}
+  
+	.haldor-firstpage-header-brand-icon {
+	  background: none;
+	}
+  
+	.haldor-firstpage-header-brand-container {
+	  top: -54px;
+	  margin-bottom: -40px !important;
+	}
+  
+	#wrapper #main .fullwidth-box .fusion-row {
+	  padding-left: 5px;
+	  padding-right: 5px;
+	}
+  
+	.fusion-body .fusion-flex-container.fusion-builder-row-1 {
+	  padding-bottom: 6px !important;
+	}
+  
+	html.avada-is-100-percent-template #main.width-100,
+	#main {
+	  padding-left: 5px !important;
+	  padding-right: 5px !important;
+	}
+  
+	html:not(.home) .page-id-18133 #main.width-100 {
+	  padding-top: 108px !important;
+	}
+  
+	#main:not(.width-100) {
+	  padding-top: 10px !important;
+	}
+  
+	html:not(.home) #main {
+	  padding-top: 48px !important;
+	}
+  
+	.fusion-body .fusion-flex-container.fusion-builder-row-2,
+	.fusion-body .fusion-flex-container.fusion-builder-row-2-5 {
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+  
+	html:not(.home) .avada-page-titlebar-wrapper {
+	  margin-top: 48px;
+	}
+  }
+  
+  .haldor-logo-container .widget {
+	margin-bottom: 0 !important;
+  }
+  
+  .tribe-mobile #main {
+	padding-top: 0 !important;
+  }
+  
+  /* #main {
+	padding-top: 100px !important;
+  } */
+  
+  /*
+  h1, h1.entry-title {
+	font-size: var(--haldor-heading-h1) !important;
+  }
+  
+  h2 {
+	font-size: var(--haldor-heading-h2) !important;
+  }
+  */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+	white-space: pre-line;
+  }
+  
+  article {
+	margin-top: 60px;
+  }
+  
+  .post-content h1 {
+	font-size: var(--haldor-heading-h1);
+  }
+  
+  @media screen and (max-device-width: 480px) {
+	.post-content h1 {
+	  font-size: calc(var(--haldor-heading-smaller-screen) + 3vw) !important;
+	}
+  
+	.post-content h2 {
+	  font-size: calc(var(--haldor-heading-smaller-screen) + 3vw) !important;
+	}
+  }
+  
+  .title-heading-center h1 {
+	font-size: var(--haldor-heading-h1);
+  }
+  
+  @media screen and (min-width: 320px) {
+	.title-heading-center h1 {
+	  font-size: calc(var(--haldor-heading-h1) + 6 * ((100vw - 320px) / 680));
+	}
+  }
+  
+  @media screen and (min-width: 1000px) {
+	.title-heading-center h1 {
+	  font-size: var(--haldor-heading-h1);
+	}
+  }
+  
+  .title-heading-center h2 {
+	font-size: var(--haldor-heading-h2);
+  }
+  
+  .title-heading-center h3 {
+	font-size: var(--haldor-heading-h3);
+  }
+  
+  .title-heading-center h4 {
+	font-size: 1.75rem;
+  }
+  
+  .title-heading-center h5 {
+	font-size: 1.67em;
+  }
+  
+  .title-heading-center h6 {
+	font-size: 1.125rem;
+  }
+  
+  /* Resize with media quries to scale. */
+  @media only screen and (min-width: 667px) {
+	.responsive-text {
+	  font-size: 1.75rem;
+	}
+  }
+  
+  .fusion-logo img {
+	width: 178px;
+  }
+  
+  .fusion-logo .fusion-standard-logo img {
+	width: 178px;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+  }
+  
+  .haldor-firstpage-hero-carousel.fusion-image-carousel {
+	margin-bottom: 0;
+  }
+  
+  .haldor-firstpage-hero-carousel .fusion-carousel-wrapper {
+	max-height: 600px;
+  }
+  
+  .haldor-firstpage-content-boxes .fusion-column,
+  .haldor-firstpage-content-boxes .col.content-wrapper-background {
+	max-height: 360px;
+  }
+  
+  .haldor-firstpage-recent-news .entry-title {
+	font-weight: 700;
+  }
+  
+  .haldor-firstpage-recent-news p strong,
+  .haldor-firstpage-recent-news p b,
+  .haldor-firstpage-recent-news p {
+	font-weight: 400;
+  }
+  
+  /* .haldor-modules-eq-column .fusion-column-wrapper {
+	max-height: 360px;
+  } */
+  
+  .haldor-firstpage-content-boxes .fusion-column {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 0 !important;
+  }
+  
+  @media only screen and (min-device-width: 640px) {
+	.haldor-firstpage-content-boxes .fusion-content-boxes {
+	  padding: 0;
+	  margin: 0;
+	}
+  
+	.haldor-firstpage-content-boxes .fusion-column {
+	  margin-bottom: 0 !important;
+	  border-right: 1px solid #ddd;
+	  border-bottom: 1px solid #ddd;
+	  height: 320px;
+	  max-height: 360px;
+	}
+  }
+  
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.haldor-firstpage-content-boxes .fusion-column {
+	  height: 380px;
+	  max-height: 420px;
+	}
+  
+	.haldor-firstpage-content-boxes .fusion-content-boxes {
+	  margin: 0 !important;
+	}
+  
+	.haldor-firstpage-content-boxes .fusion-content-boxes .content-box-column,
+	.haldor-firstpage-content-boxes
+	  .fusion-content-boxes.content-boxes-icon-on-top
+	  .content-box-column {
+	  margin-bottom: 0;
+	  font-size: 0.875rem;
+	}
+  }
+  
+  @media only screen and (max-device-width: 640px) and (min-device-width: 320px) {
+	.haldor-firstpage-content-boxes .fusion-content-boxes {
+	  margin: 0 !important;
+	  padding-bottom: 12px;
+	}
+  
+	.haldor-firstpage-content-boxes .fusion-content-boxes .content-box-column,
+	.haldor-firstpage-content-boxes
+	  .fusion-content-boxes.content-boxes-icon-on-top
+	  .content-box-column {
+	  margin-bottom: 0;
+	}
+  }
+  
+  @media only screen and (max-width: 640px) {
+	.haldor-firstpage-content-boxes .fusion-content-boxes {
+	  padding-top: 0;
+	  padding-bottom: 0;
+	  margin-top: 0;
+	  margin-bottom: 0;
+	}
+  
+	.haldor-firstpage-content-boxes .fusion-column {
+	  margin-bottom: 0;
+	  border-bottom: 1px solid #ddd;
+	}
+  }
+  
+  .haldor-slide-action {
+	border-width: 2px;
+	border-color: var(--haldor-brand-color-petrol);
+  }
+  
+  .haldor-slide-action:hover {
+	border-width: 2px;
+	border-color: var(--haldor-brand-color-purple);
+  }
+  
+  .haldor-one-page-link-small {
+	font-size: 0.875rem;
+  }
+  
+  .haldor-person-left .person-name {
+	color: #213e7a;
+	font-size: 1rem !important;
+  }
+
+  .haldor-person-left .person-title {
+	color: var(--haldor-brand-color-darkgrey);
+	font-style: italic;
+	font-size: var(--h5_typography-font-size) !important;
+	margin-top: .25rem !important;
+  }
+  
+  .haldor-person-left
+	.fusion-social-networks-wrapper
+	.fusion-social-network-icon:hover {
+	color: var(--haldor-brand-color-purple) !important;
+  }
+  
+  .fusion-meta-info {
+	border: none;
+  }
+  
+  /* Footer & Events */
+  
+  .fusion-tribe-events-list-content .entry-title {
+	font-size: 16px;
+  }
+  
+  .fusion-tribe-events-list-content .duration {
+	font-size: 14px;
+  }
+  
+  .tribe-events-widget-events-list__header-title.tribe-common-h6 {
+	margin: 0 0 28px !important;
+	text-transform: uppercase;
+	font-family: "Open Sans" !important;
+	font-size: 13px !important;
+	font-weight: 300 !important;
+	line-height: 1.5 !important;
+	letter-spacing: 0px !important;
+	font-style: normal !important;
+	white-space: normal !important;
+	color: var(--haldor-brand-color-blue) !important;
+  }
+  
+  .tribe-events-widget-events-list__event-title.tribe-common-h7,
+  .tribe-events-calendar-list__event-title.tribe-common-h6 {
+	white-space: normal !important;
+  }
+  
+  .tribe-common-c-svgicon.tribe-common-c-svgicon--plus.tribe-events-c-ical__link-icon-svg {
+	display: none !important;
+  }
+  
+  .tribe-events-widget-events-list__event-title.tribe-common-h7 > a { 
+	color: var(--footer_link_color) !important;
+	transition: none !important;
+	font-weight: 400;
+  }
+  
+  .tribe-events-widget-events-list__event-title.tribe-common-h7>a:hover {
+	color: var(--footer_link_color_hover) !important;
+	border: none !important;
+	transition: none !important;
+	text-decoration: none;
+  }
+  
+  .fusion-events-single-title-content,
+  .fusion-events-single-title .tribe-events-single-event-title,
+  .fusion-events-single-title-content span {
+	background: none !important;
+	color: var(--haldor-brand-color-blue) !important;
+  }
+  
+  .fusion-footer-widget-area .widget-title {
+	font-size: 16px;
+	font-weight: 600;
+  }
+  
+  .nf-form-content input[type="text"],
+  .nf-form-content input[type="time"],
+  .nf-form-content input[type="email"],
+  .nf-form-content input[type="tel"],
+  .nf-form-content input[type="number"] {
+	background-color: white;
+	color: black;
+	border: 1px solid #c9c9c9;
+	border-radius: 3px;
+	width: 100%;
+	font-family: "Open Sans", Arial;
+	padding: 15px;
+	font-size: 1em;
+	font-weight: 400;
+	min-height: 60px;
+	appearance: textfield;
+	-moz-apperance: textfield;
+	-webkit-appearance: textfield;
+  }
+  
+  .nf-form-content textarea {
+	all: unset;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	resize: none;
+	box-sizing: border-box;
+	background-color: white;
+	color: black;
+	border: 1px solid #c9c9c9;
+	border-radius: 3px;
+	width: 100%;
+	padding: 15px;
+	font-size: 1em;
+	font-weight: 400;
+	height: 135px;
+	white-space: pre-wrap;
+  }
+  
+  .nf-field-element input[type="checkbox"] {
+	height: 20px;
+	border: 1px solid #b5b7b8;
+	font: 14px/26px;
+	padding: 7px 7px 7px 12px;
+	/*margin:0 0 30px 0;*/
+	background: #fff;
+	border: 1px solid #d5d5d6;
+	outline: none;
+	color: #96999d;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: all 0.15s;
+	-moz-transition: all 0.15s;
+	-ms-transition: all 0.15s;
+	-o-transition: all 0.15s;
+	transition: all 0.15s;
+  }
+  
+  .nf-field-element input[type="checkbox"]:focus {
+	border-color: #acacb8;
+	color: #2e3236;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18) !important;
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18) !important;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18) !important;
+  }
+  
+  .nf-field-element input[type="checkbox"]:checked {
+	position: relative;
+	background: none var(--haldor-brand-color-blue);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+  }
+  
+  .nf-field-element input[type="checkbox"]:checked:before {
+	display: block;
+	width: 17px;
+	height: 16px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	content: "\2713\0020";
+	position: absolute;
+	top: 0.15em;
+	left: 0.22em;
+	font-size: 1.3em;
+	line-height: 0.8;
+	color: #fff;
+	transition: all 0.2s;
+  }
+  
+  .nf-field-element input[type="button"],
+  .field-wrap button,
+  .field-wrap input[type="button"],
+  .field-wrap input[type="submit"] {
+	width: 500px;
+	background: var(--haldor-brand-color-petrol);
+	padding: 8px 14px 10px;
+	cursor: pointer;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	color: #fff;
+	border: none;
+	border-color: none;
+	border-style: none;
+	-moz-border-radius: 4px !important;
+	-webkit-border-radius: 4px !important;
+	border-radius: 4px !important;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+  }
+  
+  .nf-field-element input[type="button"]:hover,
+  .nf-field-element input[type="button"]:focus {
+	background: var(--haldor-brand-color-petrol);
+  }
+  
+  @media only screen and (max-width: 480px) {
+	.field-wrap button,
+	.field-wrap input[type="button"],
+	.field-wrap input[type="submit"] {
+	  width: 96% !important;
+	}
+  
+	.nf-form-content input[type="text"],
+	.nf-form-content input[type="time"],
+	.nf-form-content input[type="email"],
+	.nf-form-content input[type="tel"],
+	.nf-form-content input[type="number"],
+	.nf-form-content textarea {
+	  width: 96% !important;
+	}
+  }
+  
+  .fusion-tb-header .fusion-menu-element-list .sub-menu {
+	max-height: 500px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+  }
+  
+  @media (min-width: 1281px) {
+	/* Fix for login link in smaller font size on topbar menu on all language */
+	.ltr
+	  .fusion-menu-element-wrapper
+	  .fusion-menu-element-list
+	  > li:not(.fusion-menu-item-button):last-child
+	  .menu-text {
+	  font-size: 13px;
+	  font-weight: 600;
+	}
+  }
+  
+  /* Fix the max-content on the mobile menu */
+  @media only screen and (max-width: 480px) {
+	.fusion-menu-element-wrapper.collapse-enabled.mobile-size-full-absolute:not(.mobile-mode-always-expanded).expanded
+	  > ul {
+	  justify-content: center;
+	  max-height: 100vh !important;
+	  max-height: -webkit-max-content !important;
+	  max-height: max-content !important;
+	  max-height: -moz-max-content !important;
+	  max-height: -o-max-content !important;
+	}
+  
+	.fusion-menu-element-wrapper.collapse-enabled.mobile-size-full-absolute:not(.mobile-mode-always-expanded).expanded
+	  > ul
+	  li {
+	  display: block;
+	}
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 1281px) {
+	.fusion-menu-element-wrapper.collapse-enabled.mobile-size-full-absolute:not(.mobile-mode-always-expanded).expanded
+	  > ul {
+	  justify-content: center;
+	  max-height: 100vh !important;
+	  max-height: -webkit-max-content !important;
+	  max-height: max-content !important;
+	  max-height: -moz-max-content !important;
+	  max-height: -o-max-content !important;
+	}
+  
+	.fusion-menu-element-wrapper.collapse-enabled.mobile-size-full-absolute:not(.mobile-mode-always-expanded).expanded
+	  > ul
+	  li {
+	  display: block;
+	}
+  }
+  
+  /* Bug with Wordpress and Avada  */
+.fusion-testimonials .review {
+	background: transparent !important;
+}
+
+.pll-parent-menu-item .fusion-background-highlight .menu_text > span {
+	display: none;
+}
+

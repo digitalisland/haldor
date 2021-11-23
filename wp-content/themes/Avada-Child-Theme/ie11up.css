@@ -1,0 +1,28 @@
+/* Internet Explorer 11+, Microsoft Edge Browser */
+/* Put this code in external stylesheet: ie11up.css */
+/* https://jeffclayton.wordpress.com/2015/04/07/css-hacks-for-windows-10-and-spartan-browser-preview/ */
+
+@charset "";
+
+_:-ms-lang(x), .fusion-body .fusion-menu-element-wrapper .fusion-menu-element-list {
+    min-height: 0;
+  }
+_:-ms-lang(x), .fusion-menu-element-wrapper .fusion-menu-element-list {
+    min-height: 0;
+    padding: 1em 0 !important;
+  }
+_:-ms-lang(x), .haldor-logo-container .widget_media_image {
+    max-height: 46px;
+  }
+
+
+  /* Microsoft Edge Browser 12+ (All) - @supports method */
+  @supports (-ms-ime-align:auto) {
+    .fusion-menu-element-wrapper .fusion-menu-element-list {
+      min-height: 0;
+      padding: 1em 0 !important;
+    }
+    .haldor-logo-container .widget_media_image {
+      max-height: 46px;
+    }
+  }
